@@ -10,4 +10,19 @@
 # problem to get a good feel for how to solve it.
 
 def can_skydive(age, has_consent_form):
-    pass
+    # set skydive = True
+    #if statement to check if > 18, can skydive
+    # if < 18, needs consent
+    skydive = True
+    if age >= 18 or has_consent_form == True:
+        return True
+    if has_consent_form == False or age < 18:
+        return False
+
+
+
+
+print(can_skydive(15,True))
+print(can_skydive(18,False))
+print(can_skydive(17,True))
+print(can_skydive(14,False))
