@@ -9,4 +9,6 @@
 # problem to get a good feel for how to solve it.
 
 def minimum_value(value1, value2):
-    pass
+    return min(value1,value2)
+
+print(minimum_value(4,5))
