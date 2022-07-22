@@ -7,4 +7,10 @@
 #
 
 def calculate_sum(values):
-    pass
+    if values == []:
+        return None
+    return sum(values)
+
+
+list = [1, 2, 3, 4]
+print(calculate_sum(list))

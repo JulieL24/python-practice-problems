@@ -21,5 +21,18 @@
 #      return value1, value2
 
 
-def count_letters_and_digits(s):
-    pass
+def count_letters_and_digits(s): 
+    value1 = 0
+    value2 = 0
+    for key in s:
+        if key.isalpha():
+            value1 += 1
+        if key.isdigit():
+            value2 += 1
+    return str(value1) + ", " + str(value2)
+
+
+print(count_letters_and_digits("abc"))
+
+a = "5"
+print(count_letters_and_digits("a123"))

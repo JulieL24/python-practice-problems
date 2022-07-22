@@ -12,4 +12,21 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+    sorted_list = sorted(values)
+    return sorted_list[len(sorted_list)-2]
+
+    
+#     largest = 0
+#     second_largest = 0
+#     if values == [] or len(values) == 1:
+#         return None
+#     for num in values:
+#         if num >= largest:
+#             second_largest = largest
+#             largest = num
+#     return second_largest
+
+number2 = [5, 7, 10, 8]
+numbers1 = [20, 43, 50, 5, 6]
+print(find_second_largest(number2))
+print(find_second_largest(numbers1))

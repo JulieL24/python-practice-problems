@@ -5,4 +5,9 @@
 #
 
 def max_in_list(values):
-    pass
+    return max(values)
+
+
+list = [10, 22, 40]
+list = [2, 40, 5]
+print(max_in_list(list))

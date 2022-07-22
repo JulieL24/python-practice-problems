@@ -9,20 +9,20 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+# set skydive = True
+# if statement to check if > 18, can skydive
+# if < 18, needs consent
+
+
 def can_skydive(age, has_consent_form):
-    # set skydive = True
-    #if statement to check if > 18, can skydive
-    # if < 18, needs consent
-    skydive = True
-    if age >= 18 or has_consent_form == True:
+    # skydive = True
+    if age >= 18 or has_consent_form is True:
         return True
-    if has_consent_form == False or age < 18:
+    if has_consent_form is False or age < 18:
         return False
 
 
-
-
-print(can_skydive(15,True))
-print(can_skydive(18,False))
-print(can_skydive(17,True))
-print(can_skydive(14,False))
+print(can_skydive(15, True))
+print(can_skydive(18, False))
+print(can_skydive(17, True))
+print(can_skydive(14, False))

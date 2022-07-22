@@ -11,6 +11,23 @@
 #   * A "D" for an average greater than or equal to 60
 #     and less than 70
 #   * An "F" for any other average
+import problem_024
 
 def calculate_grade(values):
-    pass
+    average = problem_024.calculate_average(values)
+    if average >= 90:
+        return "A"
+    elif average >= 80:
+        return "B"
+    elif average >= 70:
+        return "C"
+    elif average >= 60:
+        return "D"
+    else:
+        return "F"
+
+list = [80,70,75,95,99]
+list2 = [50,55,30,70,65]
+
+print(calculate_grade(list))
+print(calculate_grade(list2))

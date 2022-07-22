@@ -11,4 +11,15 @@
 # If the list is empty, then return the empty string.
 
 def remove_duplicate_letters(s):
-    pass
+    if s == "":
+        return []
+    list1 = []
+    new_list = list(s)
+    for str in new_list:
+        if str not in list1:
+            list1.append(str)
+    return "".join(list1)
+
+
+print(remove_duplicate_letters("hello"))
+print(remove_duplicate_letters("ball"))

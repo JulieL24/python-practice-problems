@@ -23,5 +23,21 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
-def count_letters_and_digits(s):
-    pass
+# def count_letters_and_digits(s):
+#     pass
+
+def count_letters_and_digits(s): 
+    value1 = 0
+    value2 = 0
+    for key in s:
+        if key.isalpha():
+            value1 += 1
+        if key.isdigit():
+            value2 += 1
+    return str(value1) + ", " + str(value2)
+
+
+print(count_letters_and_digits("abc"))
+
+a = "5"
+print(count_letters_and_digits("a123"))
