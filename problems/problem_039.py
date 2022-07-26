@@ -13,4 +13,15 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    newDict = {val: key for key, val in dictionary.items()}
+    return newDict
+
+
+prob = {"key": "value"}
+prob1 = {}
+prob2 = {"one": 1, "two": 2, "three": 3}
+
+print(reverse_dictionary(prob))
+print(reverse_dictionary(prob1))
+print(reverse_dictionary(prob2))
+

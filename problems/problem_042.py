@@ -12,5 +12,12 @@
 #
 # Look up the zip function to help you with this problem.
 
+# def pairwise_add(list1, list2):
+#     for ()
+
+
 def pairwise_add(list1, list2):
     pass
+
+
+
