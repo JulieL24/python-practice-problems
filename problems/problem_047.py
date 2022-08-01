@@ -13,4 +13,50 @@
 # like ".isalpha", ".isdigit", ".isupper", and ".islower"
 
 def check_password(password):
-    pass
+    lower = False
+    upperChar = False
+    has_digit = False
+    special_char = False
+
+    for character in password:
+        if character.isalpha():
+            if character.isupper():
+                upperChar = True
+            else: 
+                lower = True
+        elif character.isdigit():
+            has_digit = True
+        elif character == "$" or character == "!" or character == "@":
+            special_char = True 
+    return (
+        len(password) >= 6 
+        and len(password) <= 12 
+        and upperChar 
+        and lower 
+        and has_digit
+        and special_char
+    )
+        
+
+    # has_lowercase_letter = False                                        
+    # has_uppercase_letter = False                                        
+    # has_digit = False                                                   
+    # has_special_char = False                                           
+    # for character in password:                                          
+    #     if character.isalpha():                                        
+    #         if character.isupper():                                     
+    #             has_uppercase_letter = True                             
+    #         else:                                                       
+    #             has_lowercase_letter = True                             
+    #     elif character.isdigit():                                       
+    #         has_digit = True                                            
+    #     elif character == "$" or character == "!" or character == "@": 
+    #         has_special_char = True                                     
+    # return (                                                            
+    #     len(password) >= 6                                             
+    #     and len(password) <= 12                                         
+    #     and has_lowercase_letter                                        
+    #     and has_uppercase_letter                                        
+    #     and has_digit                                                   
+    #     and has_special_char                                            
+    # )                    

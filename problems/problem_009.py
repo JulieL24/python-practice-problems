@@ -13,4 +13,15 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    # reversedWord = list(reversed(word))
+    # for letter in word:
+    #     for letter2 in reversedWord:
+    #         print(letter2)
+    #         if letter == letter2:
+    #             palindrome = True
+    #         elif letter != letter2:
+    #             palindrome = False
+    # return palindrome
+    
+    newWord = "".join(reversed(word))
+    return newWord == word

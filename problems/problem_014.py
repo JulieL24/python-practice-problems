@@ -11,4 +11,11 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+    list_of_ingredients = ["flour", "eggs", "oil"]
+    isTrue = True
+    for item in list_of_ingredients:
+        if item in ingredients:
+            isTrue = True
+        elif item not in ingredients:
+            return False
+    return isTrue

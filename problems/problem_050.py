@@ -12,3 +12,7 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(list1):
+    list1 = []
+    list2 = []
+    half = int(len(list1) / 2)

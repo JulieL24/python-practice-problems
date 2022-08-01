@@ -14,4 +14,11 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_squares(values):
-    pass
+    sum = 0
+    if values == []:
+        return None
+    for num in values:
+        sum += num**2
+    return sum 
+
+
