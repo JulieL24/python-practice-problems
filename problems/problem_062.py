@@ -23,3 +23,12 @@
 #     * inputs:  10, "/", 12
 #       result:  0.8333333333333334
 
+def basic_calculator(num1, op, num2):
+    if op == "+":
+        return num1 + num2
+    if op == "-":
+        return num1 - num2
+    if op == "*":
+        return num1 * num2
+    if op == "/":
+        return num1 / num2

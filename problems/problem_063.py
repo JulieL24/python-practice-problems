@@ -21,3 +21,19 @@
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
 
+def shift_letters(str):
+    newStr = ""
+    for letter in str: 
+        if letter == "Z":
+            newStr += "A"
+        elif letter == "z":
+            newStr += "a"
+        else: 
+            num = ord(letter) + 1
+            newStr += chr(num)
+    return newStr
+
+print(ord("Z"))
+print(ord("A"))
+print(shift_letters("import"))
+print(shift_letters("Zahara"))

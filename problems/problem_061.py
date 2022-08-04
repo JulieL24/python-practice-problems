@@ -14,3 +14,10 @@
 #     * input:   [1, 3, 3, 20, 3, 2, 2]
 #       returns: [1, 3, 20, 2]
 
+
+def remove_duplicates(list_of_values):
+    new_list = []
+    for i in list_of_values:
+        if i not in new_list:
+            new_list.append(i)
+    return new_list

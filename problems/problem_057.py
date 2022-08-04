@@ -13,3 +13,9 @@
 #     * input:   3
 #       returns: 1/2 + 2/3 + 3/4
 
+
+def sum_fraction_sequence(number):
+    sum = 0
+    for n in range(1, number + 1):
+        sum += n / (n + 1 )
+    return sum 
