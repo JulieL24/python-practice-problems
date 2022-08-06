@@ -30,3 +30,23 @@
 
     # method get_title(self)
         # returns "Title: " + self.title
+
+
+from turtle import tiltangle
+
+
+class Book:
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
+
+    def get_author(self):
+        result = f"Author: {self.author}"
+        return result
+    
+    def get_title(self):
+        result = f"Title: {self.title}"
+        return result 
+
+    def __str__(self):
+        return self.author + self.title

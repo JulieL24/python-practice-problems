@@ -5,4 +5,6 @@
 #
 
 def max_in_list(values):
-    pass
+    if len(values) == 0:
+        return None 
+    return max(values)

@@ -24,4 +24,8 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    num = str(number)
+    result = ""
+    for i in range(length - len(num)):
+        result += pad
+    return result + num

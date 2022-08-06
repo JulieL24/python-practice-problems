@@ -7,4 +7,13 @@
 #     "surfboard"
 
 def gear_for_day(is_workday, is_sunny):
-    pass
+    gear = []
+    if is_workday and not is_sunny:
+        gear.append("umbrella")
+    if is_workday:
+        gear.append("laptop")
+    else:
+        gear.append("surfboard")
+    return gear
+
+        

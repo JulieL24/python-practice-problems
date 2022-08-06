@@ -24,5 +24,15 @@
 # at the last one you just wrote unless you really must.
 
 
+class Employee: 
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+
+    def get_fullname(self):
+        return self.firstname + " " + self.lastname
+
+    def get_email(self):
+        return self.firstname.lower() + "." + self.lastname.lower() + "@company.com"
 
 

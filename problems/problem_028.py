@@ -11,4 +11,11 @@
 # If the list is empty, then return the empty string.
 
 def remove_duplicate_letters(s):
-    pass
+    if len(s) == 0:
+        return ""
+    unique = ""
+
+    for letter in s:
+        if letter not in unique:
+            unique += letter
+    return unique

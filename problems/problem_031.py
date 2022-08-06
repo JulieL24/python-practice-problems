@@ -15,7 +15,7 @@
 
 def sum_of_squares(values):
     sum = 0
-    if values == []:
+    if len(values) == 0:
         return None
     for num in values:
         sum += num**2
